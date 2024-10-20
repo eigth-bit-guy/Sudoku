@@ -16,12 +16,22 @@ int main(void)
     BeginDrawing();
     ClearBackground(BLACK);
     DrawRectangle(20, 20, SCREENWIDTH - 100, SCREENHEIGHT- 100, WHITE); // NOTE: main rectangle
+
+    //First row
     DrawRectangleLines(square_x, square_y, (SCREENWIDTH-100)/6, (SCREENHEIGHT-100)/6, DARKGRAY);
     DrawRectangleLines(square_x+(SCREENWIDTH-100)/6, square_y, (SCREENWIDTH-100)/6, (SCREENHEIGHT-100)/6, DARKGRAY);
     DrawRectangleLines(square_x+(2*(SCREENWIDTH-100)/6), square_y, (SCREENWIDTH-100)/6, (SCREENHEIGHT-100)/6, DARKGRAY);
     DrawRectangleLines(square_x+(3*(SCREENWIDTH-100)/6), square_y, (SCREENWIDTH-100)/6, (SCREENHEIGHT-100)/6, DARKGRAY);
     DrawRectangleLines(square_x+(4*(SCREENWIDTH-100)/6), square_y, (SCREENWIDTH-100)/6, (SCREENHEIGHT-100)/6, DARKGRAY);
     DrawRectangleLines(square_x+(5*(SCREENWIDTH-100)/6), square_y, (SCREENWIDTH-100)/6, (SCREENHEIGHT-100)/6, DARKGRAY);
+
+    //Second row
+    DrawRectangleLines(square_x, square_y+(SCREENWIDTH-100)/6, (SCREENWIDTH-100)/6, (SCREENHEIGHT-100)/6, DARKGRAY);
+    DrawRectangleLines(square_x+(SCREENWIDTH-100)/6, square_y+(SCREENWIDTH-100)/6, (SCREENWIDTH-100)/6, (SCREENHEIGHT-100)/6, DARKGRAY);
+    DrawRectangleLines(square_x+(2*(SCREENWIDTH-100)/6), square_y+(SCREENWIDTH-100)/6, (SCREENWIDTH-100)/6, (SCREENHEIGHT-100)/6, DARKGRAY);
+    DrawRectangleLines(square_x+(3*(SCREENWIDTH-100)/6), square_y+(SCREENWIDTH-100)/6, (SCREENWIDTH-100)/6, (SCREENHEIGHT-100)/6, DARKGRAY);
+    DrawRectangleLines(square_x+(4*(SCREENWIDTH-100)/6), square_y+(SCREENWIDTH-100)/6, (SCREENWIDTH-100)/6, (SCREENHEIGHT-100)/6, DARKGRAY);
+    DrawRectangleLines(square_x+(5*(SCREENWIDTH-100)/6), square_y+(SCREENWIDTH-100)/6, (SCREENWIDTH-100)/6, (SCREENHEIGHT-100)/6, DARKGRAY);
     
     EndDrawing();
   }
